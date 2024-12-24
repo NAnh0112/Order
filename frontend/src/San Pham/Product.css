@@ -1,0 +1,127 @@
+/* Add this keyframe animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.product {
+    width: 80%;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    overflow-x: hidden;
+    margin: -20px auto 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.2s; 
+}
+
+.herr-von-muellerhoff-regular {
+    font-family: 'Herr Von Muellerhoff', sans-serif;
+    font-size: 7rem; 
+    font-weight: 500; 
+    margin-bottom: 50px;
+    color: gray;
+    margin-top: -5px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.5s; 
+}
+
+.menu-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f40a0aeb;
+    padding: 10px 0;
+    width: 100%;
+    margin: -70px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.7s; /* Delay for menu product */
+}
+
+.menu-items {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.menu-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #100e0e;
+    background-color: #fff;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2s;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.menu-item:hover {
+    background-color: #15e16a;  /* Màu xanh */
+    color: white;  /* Màu chữ trắng khi hover */
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột có chiều rộng đều nhau */
+    gap: 20px; 
+    justify-items: center; /* Căn giữa các sản phẩm trong cột */
+    padding: 20px 0;
+    margin: 60px;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Đảm bảo các sản phẩm có chiều cao đồng đều */
+}
+
+.product-item img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-name, .product-price {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.product-name {
+    font-weight: bold;
+    margin: 10px 0;
+}

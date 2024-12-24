@@ -1,0 +1,148 @@
+
+.product {
+    width: 80%;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    overflow-x: hidden;
+    margin: -20px auto 0;
+}
+
+.herrVonMuellerhoffRegular {
+    font-family: 'Herr Von Muellerhoff', sans-serif;
+    font-size: 7rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: gray;
+    margin-top: -5px;
+}
+
+/* Styling for the product menu */
+.menuProduct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f40a0aeb;
+    padding: 10px 0;
+    width: 100%;
+    margin: -70px;
+}
+
+.menuItems {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.menuItem {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #100e0e;
+    background-color: #fff;
+}
+
+.menuItem a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.menuItem:hover {
+    background-color: #15e16a;
+    color: white;
+}
+
+/* Product information styles */
+.proInt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 130px 20px;
+}
+
+.productImage img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 0;
+}
+
+.productDetails {
+    width: 50%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.productName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.productPrice {
+    font-size: 1.2rem;
+    color: #f40a0a;
+    margin: 5px 0;
+}
+
+.productQuantity,
+.productNote {
+    margin: 10px 0;
+}
+
+.productQuantity label,
+.productNote label {
+    margin-bottom: 5px;
+    display: block;
+    color: #000;
+}
+
+.productQuantity input,
+.productNote textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+.productButtons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.productButtons button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #f40a0a;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.productButtons button:hover {
+    background-color: #08b814;
+}
+
+.productButtons button.close {
+    background-color: #888;
+}
+
+.productButtons button.close:hover {
+    background-color: #3b11ad;
+}

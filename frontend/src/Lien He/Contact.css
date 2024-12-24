@@ -1,0 +1,150 @@
+.contact {
+    width: 80%;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0 auto; 
+}
+
+.herr-von-muellerhoff-regular {
+    margin: 0; 
+    padding-top: 0;
+    font-family: 'Herr Von Muellerhoff', sans-serif;
+    font-size: 7rem;
+    font-weight: 500;
+    color: gray;
+    text-align: center;
+}
+
+.contact-map, .contact-info {
+    opacity: 0;
+    transform: translateX(-100%); 
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.contact-map.visible, .contact-info.visible {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+.main-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0;  
+    padding-top: 0; 
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+.contact {
+    width: 80%;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    overflow-x: hidden;
+    margin-top: 0;
+}
+
+.contact-map {
+    width: 48%;
+    height: 300px;
+    border: 1px solid #ccc;
+    animation: slideInFromLeft 1s ease-out forwards;
+    margin-top: -30px; 
+}
+
+.contact-info {
+    width: 48%;
+    color: gray;
+    text-align: left;
+    font-size: 1.2rem;
+    animation: slideInFromRight 1s ease-out forwards;
+    margin-top: -30px; 
+}
+
+.contact-info div {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 20%; 
+        height: auto; 
+        padding: 10px; 
+        position: relative; 
+        box-sizing: border-box; 
+    }
+
+    .contact {
+        width: 80%; 
+        padding: 15px; 
+        margin-left: 20%; 
+    }
+
+    .herr-von-muellerhoff-regular {
+        font-size: 5rem; 
+    }
+
+    .contact-map, .contact-info {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    .contact-info {
+        font-size: 1rem; 
+    }
+}
+

@@ -1,0 +1,118 @@
+.use {
+  width: 95%;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 20px 0;
+  margin: 30px;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.use table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.use th, .use td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+.use th {
+  background-color: gray;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.use td {
+  background-color: #fff;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  opacity: 0.8;
+}
+
+.status-button {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.status-button.completed {
+  background-color: green;
+  color: white;
+}
+
+.status-button:hover {
+  opacity: 0.8;
+}
+
+
+.use th:nth-child(1),
+.use td:nth-child(1) {
+width: 20%; 
+}
+
+.use th:nth-child(2),
+.use td:nth-child(2) {
+width: 10%; 
+white-space: normal; 
+line-height: 1.5;
+}
+
+.use th:nth-child(3),
+.use td:nth-child(3) {
+width: 10%; 
+white-space: normal; 
+line-height: 1.5;
+}
+
+.use th:nth-child(4),
+.use td:nth-child(4) {
+  width: 20%; 
+  white-space: normal; 
+  line-height: 1.5;
+  word-wrap: break-word; 
+}
+
+
+.use th:nth-child(5),
+.use td:nth-child(5) {
+width: 20%; 
+white-space: normal; 
+line-height: 1.5;
+}
+
+.use th:nth-child(6),
+.use td:nth-child(6) {
+width: 15%; 
+white-space: normal; 
+line-height: 1.5;
+}
+
+.use th:nth-child(7),
+.use td:nth-child(7) {
+width: 15%; 
+white-space: normal; 
+line-height: 1.5;
+}

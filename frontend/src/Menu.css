@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  color: #000; 
+  background-color: #fff; 
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.logo {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.logo img {
+  border-radius: 0; 
+  width: 270px; 
+  height: auto; 
+}
+
+.menu, .tools {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  color: gray; 
+  position: relative;
+}
+
+.menu li a:hover {
+  color: red; 
+}
+
+.menu li::after {
+  content: ''; 
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color:  #444; 
+}
+
+.menu li, .tools li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: transparent;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.menu li {
+  margin: 30px 0; 
+  padding: 10px;
+  background-color: transparent;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative; 
+}
+
+
+.menu li:hover, .tools li:hover {
+  background-color: #444;
+  color: red;
+}
+
+.menu li + li, .tools li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr {
+  margin: 20px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tools-container {
+  position: fixed; 
+  right: 20px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 1000; 
+}
+
+.tools {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.tools-inline {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tool-item i {
+  font-size: 24px;
+  color: gray; 
+  margin-bottom: 5px;
+}
+
+.tool-item span {
+  font-size: 14px;
+  color: gray; 
+  font-weight: bold;
+}
+
+
+.tool-item:hover i, 
+.tool-item:hover span {
+  color: red;
+}
+
+
+/* Các điều chỉnh cho màn hình điện thoại */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 20%; /* Sidebar chiếm 20% chiều rộng trên điện thoại */
+    height: auto; /* Chiều cao của sidebar không cố định */
+    padding: 10px; /* Giảm padding để tối ưu không gian */
+    position: relative; /* Đảm bảo sidebar không bị chồng lên các phần tử khác */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng thể */
+  }
+
+  .logo img {
+    width: 120px; /* Giảm kích thước logo để vừa vặn hơn */
+    display: block; /* Đảm bảo logo không bị lấn sang các phần tử khác */
+    margin: 0 auto; /* Căn giữa logo */
+  }
+
+  .menu li {
+    margin: 8px 0; /* Giảm khoảng cách giữa các mục menu */
+    font-size: 0.9rem; /* Giảm kích thước chữ để tiết kiệm không gian */
+    text-align: center; /* Căn giữa văn bản menu */
+  }
+
+  .menu li a {
+    font-size: 0.8rem; /* Thu nhỏ kích thước chữ cho các mục menu */
+  }
+
+  .tools-inline {
+    gap: 6px; /* Giảm khoảng cách giữa các biểu tượng công cụ */
+    flex-wrap: wrap; /* Đảm bảo các công cụ có thể xuống dòng nếu không đủ không gian */
+    justify-content: center; /* Căn giữa các biểu tượng công cụ */
+  }
+
+  .tool-item i {
+    font-size: 18px; /* Giảm kích thước icon để tiết kiệm không gian */
+  }
+
+  .tool-item span {
+    font-size: 10px; /* Giảm kích thước văn bản */
+    display: block; /* Đảm bảo văn bản không bị chồng lấn với icon */
+    text-align: center; /* Căn giữa văn bản */
+  }
+}
+
+/* Các điều chỉnh cho màn hình cực nhỏ (dưới 480px) */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 20%; /* Sidebar vẫn chiếm 20% chiều rộng trên màn hình cực nhỏ */
+    padding: 8px; /* Giảm padding một chút để tối ưu không gian */
+    font-size: 0.9rem; /* Giảm kích thước font cho sidebar */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng thể */
+  }
+
+  .logo img {
+    width: 100px; /* Giảm kích thước logo để vừa vặn hơn */
+    margin-bottom: 8px; /* Thêm khoảng cách dưới logo */
+  }
+
+  .menu li {
+    margin: 6px 0; /* Giảm khoảng cách giữa các mục menu */
+    font-size: 0.8rem; /* Kích thước font nhỏ hơn */
+  }
+
+  .menu li a {
+    font-size: 0.7rem; /* Thu nhỏ kích thước chữ cho các mục menu */
+  }
+
+  .tools-inline {
+    gap: 4px; /* Giảm khoảng cách giữa các công cụ */
+  }
+
+  .tool-item i {
+    font-size: 16px; /* Giảm kích thước icon */
+  }
+
+  .tool-item span {
+    font-size: 8px; /* Giảm kích thước văn bản */
+  }
+}
+
+
+.tool-item {
+  position: relative; /* Allow absolute positioning inside this element */
+}
+
+.item-count {
+  position: absolute;
+  top: -5px; /* Adjust position above the icon */
+  right: -5px; /* Adjust position to the right of the icon */
+  background-color: red; /* Red background */
+  color: white; /* White text color */
+  border-radius: 50%; /* Circular shape */
+  padding: 5px 8px; /* Adjust size of the circle */
+  font-size: 12px; /* Font size */
+  font-weight: bold; /* Make the number bold */
+  text-align: center; /* Center the text */
+  border: 2px solid white; /* White border around the circle */
+}

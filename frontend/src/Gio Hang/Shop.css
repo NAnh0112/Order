@@ -1,0 +1,74 @@
+.shoping {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #b5b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+li span {
+    margin-right: 20px;
+    flex: 1; 
+    text-align: left; 
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.quantity-container button,
+.buttons-container button {
+    margin: 0 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8c21c5;
+}

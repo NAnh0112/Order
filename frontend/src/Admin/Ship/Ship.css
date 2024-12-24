@@ -1,0 +1,124 @@
+.ship {
+  width: 95%;
+  padding: 10px;
+  overflow-x: auto;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 20px 0;
+  margin: 30px;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.ship table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ship th, .ship td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #000000;
+}
+
+.ship th {
+  background-color: gray;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.ship tr {
+  height: 60px; 
+}
+
+.ship td {
+  background-color: #fff;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  opacity: 0.8;
+}
+
+.status-button {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.status-button.completed {
+  background-color: green;
+  color: white;
+}
+
+.status-button:hover {
+  opacity: 0.8;
+}
+
+.ship th:nth-child(1),
+.ship td:nth-child(1) {
+  width: 25%; 
+}
+
+.ship th:nth-child(2),
+.ship td:nth-child(2) {
+  width: 1%; 
+  white-space: normal; 
+  line-height: 1.5;
+}
+
+.ship th:nth-child(3),
+.ship td:nth-child(3) {
+  width: 25%; 
+  white-space: normal; 
+  line-height: 1.5;
+}
+
+.ship th:nth-child(4),
+.ship td:nth-child(4) {
+  width: 17%; 
+  white-space: normal; 
+  line-height: 1.5;
+}
+
+.ship th:nth-child(5),
+.ship td:nth-child(5) {
+  width: 10%; 
+  white-space: normal; 
+  line-height: 1.5;
+}
+
+.ship th:nth-child(6),
+.ship td:nth-child(6) {
+  width: 14%; 
+  white-space: normal; 
+  line-height: 1.5;
+}
+
+.ship th:nth-child(7),
+.ship td:nth-child(7) {
+  width: 18%; 
+  white-space: normal; 
+  line-height: 1.5;
+}
+
+.ship th:nth-child(8),
+.ship td:nth-child(8) {
+  width: 5%; 
+}
